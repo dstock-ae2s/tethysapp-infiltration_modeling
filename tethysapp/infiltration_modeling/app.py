@@ -29,6 +29,26 @@ class InfiltrationModeling(TethysAppBase):
                 url='infiltration-modeling',
                 controller='infiltration_modeling.controllers.home'
             ),
+            UrlMap(
+                name='curvenumber',
+                url='infiltration-modeling/curvenumber',
+                controller='infiltration_modeling.controllers.curvenumber'
+            ),
+            UrlMap(
+                name='greenampt',
+                url='infiltration-modeling/greenampt',
+                controller='infiltration_modeling.controllers.greenampt'
+            ),
+            UrlMap(
+                name='hortons',
+                url='infiltration-modeling/hortons',
+                controller='infiltration_modeling.controllers.hortons'
+            ),
+            UrlMap(
+                name='philips',
+                url='infiltration-modeling/philips',
+                controller='infiltration_modeling.controllers.philips'
+            ),
         )
 
         return url_maps

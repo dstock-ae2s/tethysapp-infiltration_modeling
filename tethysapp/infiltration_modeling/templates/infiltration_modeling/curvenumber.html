@@ -8,7 +8,16 @@
 {% endblock %}
 
 {% block app_content %}
-  <h1>INFILTRATION MODELING</h1>
+  <h1>CURVE NUMBER METHOD</h1>
+  <div class="input-menu" id="curvenumber-menu">
+    <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-group cuvenumber-upload">
+        
+      </div>
+      {% gizmo button submit_curvenumber %}
+    </form>
+  </div>
 {% endblock %}
 
 {# Use the after_app_content block for modals #}
